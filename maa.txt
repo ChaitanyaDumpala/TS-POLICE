@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+class DIVIDE_ZERO{};
+void divide(int x,int y)
+{
+   intz;
+   try
+   {
+      if(y==0)
+       throw DIVIDE_ZERO();
+      z=x/y;
+        cout<<"/n z="<<z;
+   } 
+   catch(DIVIDE_ZERO e) 
+   {
+       cout<<"\n Exception caught in divide()...." ;
+   } 
+}
+void main() 
+{
+     try
+      {
+        divide(10,2);
+        divide(12,0);
+      }
+      catch(DIVIDE_ZERO e1) 
+      {
+      cout<<"\n Exemption caught in main()...." ;
+     } 
+} 
