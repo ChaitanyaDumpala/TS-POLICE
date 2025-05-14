@@ -1,1 +1,28 @@
-... 
+#include<iostream.h>
+#include<conio.h>
+class POSITIVE{};
+class NEGATIVE{};
+class ZERO{};
+void what_sign(into n)
+{
+    if(n==0)
+      throw ZERO();
+    else if(n<0)
+      throw NEGITIVE();
+    else if(n>0)
+      throw POSITIVE();
+} 
+void main() 
+  {
+    int n;
+     cout<<"\\ Enter number:";
+     cin>>n;
+     try
+     {
+       what_sign(n);
+     } 
+   catch(... ) 
+   {
+    cout<<"\n Exception caught..." ;
+  } 
+getch();
